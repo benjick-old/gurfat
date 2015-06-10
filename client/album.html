@@ -1,0 +1,21 @@
+<template name="album">
+	<div class="container">
+		{{#each album.files}}
+			{{>albumImage}}
+		{{/each}}
+	</div>
+</template>
+
+<template name="albumImage">
+	<div class="well">
+		{{#with image id}}
+			<a href="http://i.gurf.at/{{this.s3}}"><img src="http://i.gurf.at/{{this.s3}}" class="img-responsive center-block"></a>
+			
+		{{/with}}
+		{{s3}}
+		{{#if isOwner}}
+			<button type="button" class="btn btn-info edit">edit</button>
+		{{/if}}
+		{{text}}
+	</div>
+</template>
