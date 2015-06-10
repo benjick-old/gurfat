@@ -13,9 +13,10 @@ cfs:s3
 raix:ui-dropped-event
 msavin:mongol
 artwells:accounts-guest
-accounts-ui
+ian:accounts-ui-bootstrap-3
 meteorhacks:flow-router
 meteorhacks:flow-layout
 twbs:bootstrap
+fortawesome:fontawesome
 mizzao:bootboxjs
 markdown

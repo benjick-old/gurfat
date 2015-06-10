@@ -1,8 +1,10 @@
 <template name="album">
 	<div class="container">
-		{{#each album.files}}
-			{{>albumImage}}
-		{{/each}}
+		{{#unless loading}}
+			{{#each album.files}}
+				{{>albumImage}}
+			{{/each}}
+		{{/unless}}
 	</div>
 </template>
 

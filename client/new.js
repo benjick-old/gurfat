@@ -1,5 +1,5 @@
 Template.new.events({
-	'dropped .well': function(event, temp) {
+	'dropped .drop': function(event, temp) {
 
 		var album = Albums.insert({
 			user: Meteor.userId()
