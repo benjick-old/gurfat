@@ -9,15 +9,15 @@
 </template>
 
 <template name="albumImage">
-	<div class="well">
+	<div class="">
 		{{#with image id}}
 			<a href="http://i.gurf.at/{{this.s3}}"><img src="http://i.gurf.at/{{this.s3}}" class="img-responsive center-block"></a>
 			
 		{{/with}}
-		{{s3}}
+		<p>{{text}}</p>
 		{{#if isOwner}}
-			<button type="button" class="btn btn-info edit">edit</button>
+			<button type="button" class="btn btn-info edit">edit text</button>
 		{{/if}}
-		{{text}}
 	</div>
+	<hr>
 </template>
