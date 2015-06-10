@@ -34,7 +34,6 @@ Template.albumImage.events({
 				if (result === null) {
 					//Example.show("Prompt dismissed");
 				} else {
-					console.log(self);
 					Meteor.call('updateText', FlowRouter.getParam("album"), self.id, result, function (error, result) {});
 					//Example.show("Hi <b>"+result+"</b>");
 				}

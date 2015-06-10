@@ -4,7 +4,6 @@ Template.new.events({
 		var album = Albums.insert({
 			user: Meteor.userId()
 		});
-		console.log(album)
 
 		FS.Utility.eachFile(event, function(file) {
 			file.user = Meteor.userId();
