@@ -7,6 +7,7 @@ Template.new.events({
 		console.log(album)
 
 		FS.Utility.eachFile(event, function(file) {
+			file.user = Meteor.userId();
 			var id = Images.insert(file);
 			Albums.update({ _id: album },{ $push: { 
 				files: {

@@ -11,3 +11,15 @@ Meteor.publish('album', function (album) {
 		images
 	]
 });
+
+Meteor.publish('albums', function () {
+	var myAlbums = Albums.find({
+		user: this.userId
+	})
+	myFirsts = []
+	myAlbums.forEach(function (item) {
+		myFirsts.push(item.files[0].id)
+	});
+	myImages = Images.find({ _id : { $in : myFirsts } });
+	return [myAlbums, myImages]
+});

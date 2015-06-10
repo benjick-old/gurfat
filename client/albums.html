@@ -1,0 +1,27 @@
+<template name="albums">
+    <section class="bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">My albums</h2>
+                    <hr class="light">
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<div class="container row">
+    {{#each albums}}
+    	{{>albumsSingle}}
+    {{/each}}
+    </div>
+</template>
+
+<template name="albumsSingle">
+	<div class="col-md-4 text-center">
+		{{#with first this}}
+			<img src="http://i.gurf.at/{{this.s3}}" class="img-responsive center-block">
+		{{/with}}
+		<a class="btn btn-primary" href="{{pathFor 'album' album=this._id}}">Go to this album</a>
+	</div>
+</template>

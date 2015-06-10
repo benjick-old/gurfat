@@ -45,7 +45,7 @@ Template.albumImage.events({
 
 Template.albumImage.helpers({
 	image: function(id) {
-		if(FlowRouter.subsReady("album")) {
+		if(FlowRouter.subsReady("album") && typeof(image) !== 'undefined') {
 			var image = Images.findOne(id);
 			image.s3 = image.copies.images.key.split('/').pop();
 			return image;

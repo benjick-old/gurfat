@@ -15,6 +15,7 @@ msavin:mongol
 artwells:accounts-guest
 ian:accounts-ui-bootstrap-3
 meteorhacks:flow-router
+arillo:flow-router-helpers
 meteorhacks:flow-layout
 twbs:bootstrap
 fortawesome:fontawesome
