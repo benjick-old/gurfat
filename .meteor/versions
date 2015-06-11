@@ -77,6 +77,7 @@ npm-bcrypt@0.7.8_2
 numeral:numeral@1.5.3
 observe-sequence@1.0.6
 ongoworks:security@1.1.0
+ongoworks:spiderable@1.0.7
 ordered-dict@1.0.3
 raix:eventemitter@0.1.2
 raix:ui-dropped-event@0.0.7
