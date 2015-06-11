@@ -20,7 +20,7 @@
 <template name="albumsSingle">
 	<div class="col-md-4 text-center">
 		{{#with first this}}
-			<img src="http://i.gurf.at/{{this.s3}}" class="img-responsive center-block">
+			<img src="//i.gurf.at/{{this.s3}}" class="img-responsive center-block">
 		{{/with}}
 		<a class="btn btn-primary" href="{{pathFor 'album' album=this._id}}">Go to this album</a>
 	</div>
